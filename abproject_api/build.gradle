@@ -33,7 +33,9 @@ dependencies {
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation 'mysql:mysql-connector-java:8.0.33' // MySQL 드라이버 버전 명시
 }
+
 
 tasks.named('test') {
     useJUnitPlatform()
